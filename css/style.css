@@ -1,0 +1,54 @@
+:root {
+  --color-brand: #2b7fff;
+  --color-primary-daark: #011c44;
+  --color-primary-ligt: #ffffff;
+}
+body {
+  color: var(--color-primary-daark);
+}
+ul {
+  list-style-type: none;
+}
+
+/* LINK */
+.link {
+  color: var(--color-primary-daark);
+}
+
+.link:hover {
+  color: var(--color-brand);
+}
+
+/* =========================== */
+/* HERO-TITLE */
+
+/* =========================== */
+
+/* BUTTON */
+.button {
+  background-color: var(--color-brand);
+  color: var(--color-primary-ligt);
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+}
+
+.button:hover {
+  color: var(--color-brand);
+  background-color: transparent;
+}
+/* ======================= */
+.accent {
+  color: var(--color-brand);
+}
+
+/* 
+.foot-link {
+  color: var(--color-primary-ligt);
+}
+.addres-link {
+  color: var(--color-primary-ligt);
+}
+.sobaka {
+  color: var(--color-primary-ligt);
+}
+ */
