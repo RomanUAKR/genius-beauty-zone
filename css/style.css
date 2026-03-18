@@ -1,3 +1,20 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v51-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v51-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --color-brand: #2b7fff;
   --color-primary-daark: #011c44;
@@ -5,22 +22,38 @@
 }
 body {
   color: var(--color-primary-daark);
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 ul {
   list-style-type: none;
+}
+address {
+  font-style: normal;
 }
 
 /* LINK */
 .link {
   color: var(--color-primary-daark);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand);
+  font-weight: 700;
 }
 
 /* =========================== */
 /* HERO-TITLE */
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 /* =========================== */
 
@@ -30,25 +63,44 @@ ul {
   color: var(--color-primary-ligt);
   border: 2px solid var(--color-brand);
   border-radius: 32px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .button:hover {
   color: var(--color-brand);
   background-color: transparent;
 }
+
+.button-text {
+  font-size: 12px;
+}
 /* ======================= */
 .accent {
   color: var(--color-brand);
 }
 
-/* 
+/* SECTIONTITLE */
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+/* ======================= */
+.perevag {
+  font-size: 18px;
+}
+
 .foot-link {
-  color: var(--color-primary-ligt);
+  /* color: var(--color-primary-ligt); */
+  text-decoration: none;
+  font-size: 16px;
 }
 .addres-link {
-  color: var(--color-primary-ligt);
+  /* color: var(--color-primary-ligt); */
+  text-decoration: none;
+  font-size: 16px;
 }
 .sobaka {
-  color: var(--color-primary-ligt);
+  /* color: var(--color-primary-ligt); */
+  font-size: 13px;
 }
- */
