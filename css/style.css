@@ -1,3 +1,28 @@
+/* roboto-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v51-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v51-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v51-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --color-brand: #2b7fff;
   --color-dark: #011c44;
@@ -7,28 +32,42 @@
 /* ----BASE------ */
 body {
   color: var(--color-dark);
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
   list-style: none;
 }
-
+address {
+  font-style: normal;
+}
 /* ----BASE------ */
 
 /* -----LINK----- */
 .link {
   color: var(--color-dark);
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
 }
 .link:hover {
   color: var(--color-brand);
+  font-weight: 700;
 }
 /* -----LINK----- */
 /* ----HERO-TITLE---- */
 .hero-title {
   color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
 }
 .hero-title .accent {
+  font-size: 140px;
+  font-weight: 700;
   color: var(--color-brand);
 }
 /* ----HERO-TITLE---- */
@@ -39,18 +78,47 @@ ul {
   border: 2px, solid, var(--color-brand);
   border-radius: 8px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
 }
 .button:hover {
   color: var(--color-dark);
   background-color: transparent;
+  font-weight: 600;
+}
+
+.button-text {
+  font-size: 12px;
+  font-weight: 400;
 }
 /* ---BUTTON--- */
 
 /* ---SECTION-TITLE--- */
 .section-title {
   color: var(--color-dark);
+  font-size: 64px;
+  font-weight: 700;
 }
 .section-title .accent {
   color: var(--color-brand);
 }
 /* ---SECTION-TITLE--- */
+
+/* ----FOOTER---- */
+
+.addresses {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.link-foot {
+  color: var(--color-light);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.link-foot:hover {
+  color: var(--color-light);
+  font-weight: 700;
+}
