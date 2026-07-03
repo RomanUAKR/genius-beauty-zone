@@ -30,12 +30,29 @@
 }
 
 /* ----BASE------ */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 body {
+  margin: 0;
   color: var(--color-dark);
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 ul {
@@ -59,8 +76,12 @@ address {
   font-weight: 700;
 }
 /* -----LINK----- */
-/* ----HERO-TITLE---- */
+/* ----HERO-SECTION---- */
+.hero-section {
+  margin-bottom: 196px;
+}
 .hero-title {
+  margin-bottom: 40px;
   color: var(--color-dark);
   font-size: 18px;
   font-weight: 400;
@@ -70,13 +91,13 @@ address {
   font-weight: 700;
   color: var(--color-brand);
 }
-/* ----HERO-TITLE---- */
-/* ---BUTTON--- */
+
 .button {
+  padding: 16px 32px;
   background-color: var(--color-brand);
   color: var(--color-light);
   border: 2px, solid, var(--color-brand);
-  border-radius: 8px;
+  border-radius: 32px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 300;
@@ -91,10 +112,34 @@ address {
   font-size: 12px;
   font-weight: 400;
 }
-/* ---BUTTON--- */
 
+/* ----HERO-TITLE---- */
+/* ----SECTION-PRO-NAS----- */
+.pro-nas {
+  margin-bottom: 176px;
+}
+
+/* ----SECTION-PRO-NAS----- */
+/* ------SECTION-CHOMU---- */
+.chomy {
+  margin-bottom: 96px;
+}
+
+/* ------SECTION-CHOMU---- */
+
+/* ----section-proced---- */
+
+.proced {
+  margin-bottom: 96px;
+}
+/* section-contak */
+
+.conta {
+  padding-bottom: 96px;
+}
 /* ---SECTION-TITLE--- */
 .section-title {
+  margin-top: 0;
   color: var(--color-dark);
   font-size: 64px;
   font-weight: 700;
